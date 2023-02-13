@@ -7,7 +7,7 @@ on:
       - main
   workflow_dispatch:
 jobs:
-  MR_Push_Validation:
+  MR_Push_Validation-Test:
     runs-on: ubuntu-latest
     steps:
       - name: MR Push Validation Test
