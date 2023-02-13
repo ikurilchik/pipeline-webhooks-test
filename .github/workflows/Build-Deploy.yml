@@ -1,0 +1,31 @@
+name: Build-Deploy
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        run: echo Build
+  Dev:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dev
+        run: echo Dev
+  QA:
+    runs-on: ubuntu-latest
+    steps:
+      - name: QA
+        run: echo QA
+  STG:
+    runs-on: ubuntu-latest
+    steps:
+      - name: STG
+        run: echo STG
+  Prod:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prod
+        run: echo Prod
