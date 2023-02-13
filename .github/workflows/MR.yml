@@ -1,0 +1,27 @@
+name: MR
+on:
+  pull_request:
+    types: -opened
+    branches: [ "main" ]
+  workflow_dispatch:
+jobs:
+  MR_Push_Validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: MR Push Validation
+        run: echo MR Push Validation
+  MR_build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: MR build
+        run: echo MR build
+  MR_Style_Guides:
+    runs-on: ubuntu-latest
+    steps:
+      - name: MR Style Guides
+        run: echo MR Style Guides
+  MR_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: MR tests
+        run: echo MR tests
