@@ -10,7 +10,7 @@ jobs:
   MR_Push_Validation:
     runs-on: ubuntu-latest
     steps:
-      - name: MR Push Validation
+      - name: MR Push Validation Test
         run: echo MR Push Validation
   MR_build:
     runs-on: ubuntu-latest
