@@ -1,8 +1,10 @@
 name: MR
 on:
   pull_request:
-    types: -opened
-    branches: [ "main" ]
+    types:
+      - opened
+    branches:
+      - main
   workflow_dispatch:
 jobs:
   MR_Push_Validation:
